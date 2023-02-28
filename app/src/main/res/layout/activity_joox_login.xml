@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/telorr"
+    tools:context=".JooxLoginActivity"
+    >
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:src="@drawable/jooxxxxxx" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_facebook"
+        android:layout_width="55mm"
+        android:layout_height="10mm"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="76mm"
+        android:backgroundTint="#126ED5"
+        android:drawableLeft="@drawable/ic_icons8_facebook"
+        android:fontFamily="@font/palanquin"
+        android:text="continue with Facebook"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        app:cornerRadius="25dp" />
+
+    <LinearLayout
+        android:id="@+id/loginwithothers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_facebook"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/mobilecard"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="90dp"
+            android:backgroundTint="#00000000"
+            >
+
+         <ImageView
+             android:id="@+id/mobellogo"
+             android:layout_gravity="center_horizontal"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:src="@drawable/mobel"
+
+             />
+
+            <TextView
+                android:id="@+id/mobeltext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6mm"
+                android:fontFamily="@font/palanquin"
+                android:text="Mobile"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="17dp"
+
+
+                />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/emailcard"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="80dp"
+            android:backgroundTint="#00000000"
+            >
+
+            <ImageView
+                android:id="@+id/emaillogo"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mail"
+
+                />
+
+            <TextView
+                android:layout_marginTop="6mm"
+                android:id="@+id/emailtext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:fontFamily="@font/palanquin"
+                android:text="Email"
+                android:textColor="@color/white"
+                android:textSize="17dp"
+
+
+                />
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/termstxt"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginwithothers"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        android:drawableLeft="@drawable/baseline_check_circle_24"
+        android:fontFamily="@font/palanquin"
+        android:text="@string/terms"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:fontFamily="@font/palanquin"
+        android:textAlignment="center"
+        android:layout_below="@+id/termstxt"
+        android:text="@string/service"
+        android:textSize="16dp"
+        />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,896 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:background="#0E0E0E"
+    android:padding="10dp"
+    >
+    <TextView
+        android:id="@+id/discovertxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Discover"
+        android:textColor="#f9f9f9"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        android:layout_marginTop="1mm"
+        />
+
+    <LinearLayout
+        android:id="@+id/categorieslayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/discovertxt"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="70dp"
+            android:layout_height="90dp"
+            android:layout_marginRight="25dp"
+            android:backgroundTint="#00000000"
+            android:outlineProvider="none"
+            >
+
+            <ImageView
+                android:id="@+id/livelogo"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/live"
+
+                />
+
+            <TextView
+                android:layout_marginTop="9mm"
+                android:id="@+id/livetext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:fontFamily="@font/palanquin"
+                android:text="Live"
+                android:textColor="@color/white"
+                android:textSize="17dp"
+
+
+                />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="70dp"
+            android:layout_height="90dp"
+            android:layout_marginRight="25dp"
+            android:backgroundTint="#00000000"
+            android:outlineProvider="none"
+            >
+
+            <ImageView
+                android:id="@+id/karaokelogo"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/microphone"
+
+                />
+
+            <TextView
+                android:layout_marginTop="9mm"
+                android:id="@+id/karaoketext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:fontFamily="@font/palanquin"
+                android:text="Karaoke"
+                android:textColor="@color/white"
+                android:textSize="17dp"
+
+
+                />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="70dp"
+            android:layout_height="90dp"
+            android:layout_marginRight="25dp"
+            android:backgroundTint="#00000000"
+            android:outlineProvider="none"
+            >
+
+            <ImageView
+                android:id="@+id/buzzlogo"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/buzz"
+
+                />
+
+            <TextView
+                android:layout_marginTop="9mm"
+                android:id="@+id/buzztext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:fontFamily="@font/palanquin"
+                android:text="Buzz"
+                android:textColor="@color/white"
+                android:textSize="17dp"
+
+
+                />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="70dp"
+            android:layout_height="90dp"
+            android:outlineProvider="none"
+            android:backgroundTint="#00000000"
+
+            >
+
+            <ImageView
+                android:id="@+id/radiologo"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/radio"
+
+                />
+
+            <TextView
+                android:layout_marginTop="9mm"
+                android:id="@+id/radiotext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:fontFamily="@font/palanquin"
+                android:text="Radio"
+                android:textColor="@color/white"
+                android:textSize="17dp"
+
+
+                />
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/topcharttxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="JOOX Top Charts"
+        android:textColor="#f9f9f9"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        android:layout_below="@id/categorieslayout"
+        android:layout_marginTop="20dp"
+        />
+
+    <HorizontalScrollView
+        android:id="@+id/bannercarousel"
+        android:layout_below="@+id/topcharttxt"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="330dp"
+                android:layout_height="150dp"
+                android:backgroundTint="#203040"
+                android:outlineProvider="none"
+                android:layout_marginRight="20dp"
+                android:padding="10dp"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:padding="15dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/picbanner2"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/palanquin"
+                            android:text="Daily Popularity\nRanking"
+                            android:textColor="@color/white"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/palanquin"
+                            android:text="1 The 1975\n2 SZA"
+                            android:textColor="@color/white"
+                            android:textSize="13dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="330dp"
+                android:layout_height="150dp"
+                android:backgroundTint="#665687"
+                android:outlineProvider="none"
+                android:layout_marginRight="20dp"
+                android:padding="10dp"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:padding="15dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/sosalbum"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="10dp"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Top Albums"
+                            android:fontFamily="@font/palanquin"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:textSize="16dp"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="1  SOS\n2 Being Funny In A Foreign Language "
+                            android:fontFamily="@font/palanquin"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:textSize="13dp"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="330dp"
+                android:layout_height="150dp"
+                android:backgroundTint="#211f2b"
+                android:outlineProvider="none"
+                android:layout_marginRight="20dp"
+                android:padding="10dp"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:padding="15dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/eternalsunshine"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="10dp"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Top Songs"
+                            android:fontFamily="@font/palanquin"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:textSize="16dp"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="1 Eternal Sunshine\n2 About You\n3 Il Vento D'oro"
+                            android:fontFamily="@font/palanquin"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:textSize="13dp"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+
+
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/recommendtxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="JOOX Recommendation"
+        android:textColor="#f9f9f9"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        android:layout_below="@id/bannercarousel"
+        android:layout_marginTop="20dp"
+        />
+
+    <HorizontalScrollView
+        android:layout_marginTop="15dp"
+        android:id="@+id/recommend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/recommendtxt"
+
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00000000"
+            android:outlineProvider="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:backgroundTint="#00000000"
+            android:outlineProvider="none"
+            android:layout_marginBottom="2mm"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/beyond"
+
+                >
+
+            </ImageView>
+
+            <LinearLayout
+                android:layout_width="220dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="2mm"
+                android:layout_marginTop="2mm"
+                android:orientation="vertical"
+                >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Beyond The Stars"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins"
+                android:textSize="16dp"
+                />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+
+                    android:text="Dept, Ashley Alisha"
+                    android:textColor="@color/material_dynamic_neutral50"
+
+                    android:textSize="13dp" />
+            </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:backgroundTint="#00000000"
+                android:outlineProvider="none"
+                android:layout_marginBottom="2mm"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/funnyforeign"
+
+                        >
+
+                    </ImageView>
+
+                    <LinearLayout
+                        android:layout_width="220dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="2mm"
+                        android:layout_marginTop="2mm"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Happiness"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/poppins"
+                            android:textSize="16dp"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins"
+
+                            android:text="The 1975"
+                            android:textColor="@color/material_dynamic_neutral50"
+
+                            android:textSize="13dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:backgroundTint="#00000000"
+                android:outlineProvider="none"
+                android:layout_marginBottom="2mm"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/keshi"
+
+                        >
+
+                    </ImageView>
+
+                    <LinearLayout
+                        android:layout_width="220dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="2mm"
+                        android:layout_marginTop="2mm"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="LIMBO"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/poppins"
+                            android:textSize="16dp"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins"
+
+                            android:text="keshi"
+                            android:textColor="@color/material_dynamic_neutral50"
+
+                            android:textSize="13dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="50mm"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="300dp"
+                    android:layout_height="70dp"
+                    android:backgroundTint="#00000000"
+                    android:outlineProvider="none"
+                    android:layout_marginBottom="2mm"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+                        <ImageView
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/herewithme"
+
+                            >
+
+                        </ImageView>
+
+                        <LinearLayout
+                            android:layout_width="220dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="2mm"
+                            android:layout_marginTop="2mm"
+                            android:orientation="vertical"
+                            >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Here With Me"
+                                android:textColor="@color/white"
+                                android:fontFamily="@font/poppins"
+                                android:textSize="16dp"
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins"
+
+                                android:text="d4vd"
+                                android:textColor="@color/material_dynamic_neutral50"
+
+                                android:textSize="13dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="300dp"
+                    android:layout_height="70dp"
+                    android:backgroundTint="#00000000"
+                    android:outlineProvider="none"
+                    android:layout_marginBottom="2mm"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+                        <ImageView
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/funnyforeign"
+
+                            >
+
+                        </ImageView>
+
+                        <LinearLayout
+                            android:layout_width="220dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="2mm"
+                            android:layout_marginTop="2mm"
+                            android:orientation="vertical"
+                            >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="About You"
+                                android:textColor="@color/white"
+                                android:fontFamily="@font/poppins"
+                                android:textSize="16dp"
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins"
+
+                                android:text="The 1975"
+                                android:textColor="@color/material_dynamic_neutral50"
+
+                                android:textSize="13dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="300dp"
+                    android:layout_height="70dp"
+                    android:backgroundTint="#00000000"
+                    android:outlineProvider="none"
+                    android:layout_marginBottom="2mm"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+                        <ImageView
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/ifyouonlyknew"
+
+                            >
+
+                        </ImageView>
+
+                        <LinearLayout
+                            android:layout_width="220dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="2mm"
+                            android:layout_marginTop="2mm"
+                            android:orientation="vertical"
+                            >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="If You Only Knew"
+                                android:textColor="@color/white"
+                                android:fontFamily="@font/poppins"
+                                android:textSize="16dp"
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins"
+
+                                android:text="Yayyoung"
+                                android:textColor="@color/material_dynamic_neutral50"
+
+                                android:textSize="13dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="100mm"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="300dp"
+                    android:layout_height="70dp"
+                    android:backgroundTint="#00000000"
+                    android:outlineProvider="none"
+                    android:layout_marginBottom="2mm"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+                        <ImageView
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/supergirlies"
+
+                            >
+
+                        </ImageView>
+
+                        <LinearLayout
+                            android:layout_width="220dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="2mm"
+                            android:layout_marginTop="2mm"
+                            android:orientation="vertical"
+                            >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Aw Aw Aw"
+                                android:textColor="@color/white"
+                                android:fontFamily="@font/poppins"
+                                android:textSize="16dp"
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins"
+
+                                android:text="Super Girlies"
+                                android:textColor="@color/material_dynamic_neutral50"
+
+                                android:textSize="13dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="300dp"
+                    android:layout_height="70dp"
+                    android:backgroundTint="#00000000"
+                    android:outlineProvider="none"
+                    android:layout_marginBottom="2mm"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+                        <ImageView
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/penninsula"
+
+                            >
+
+                        </ImageView>
+
+                        <LinearLayout
+                            android:layout_width="220dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="2mm"
+                            android:layout_marginTop="2mm"
+                            android:orientation="vertical"
+                            >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="It's Okay To Cry"
+                                android:textColor="@color/white"
+                                android:fontFamily="@font/poppins"
+                                android:textSize="16dp"
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins"
+
+                                android:text="The Penninsula"
+                                android:textColor="@color/material_dynamic_neutral50"
+
+                                android:textSize="13dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="300dp"
+                    android:layout_height="70dp"
+                    android:backgroundTint="#00000000"
+                    android:outlineProvider="none"
+                    android:layout_marginBottom="2mm"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+                        <ImageView
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/jogjahiphop"
+
+                            >
+
+                        </ImageView>
+
+                        <LinearLayout
+                            android:layout_width="220dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="2mm"
+                            android:layout_marginTop="2mm"
+                            android:orientation="vertical"
+                            >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Cintamu Sepahit Topi..."
+                                android:textColor="@color/white"
+                                android:fontFamily="@font/poppins"
+                                android:textSize="16dp"
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins"
+
+                                android:text="Jogja Hip Hop Foundation"
+                                android:textColor="@color/material_dynamic_neutral50"
+
+                                android:textSize="13dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    </HorizontalScrollView>
+
+
+
+
+</RelativeLayout>

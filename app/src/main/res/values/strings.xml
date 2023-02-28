@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Joox Slicer</string>
+    <string name="terms">I Agree to the <u> Terms Of Service</u>,</string>
+    <string name="service"><u> JOOX User Terms</u> and <u> Privacy Policy</u></string>
+</resources>
