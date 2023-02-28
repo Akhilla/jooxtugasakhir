@@ -415,33 +415,31 @@
 
             </ImageView>
 
-            <LinearLayout
-                android:layout_width="220dp"
-                android:layout_height="50dp"
-                android:layout_marginLeft="2mm"
-                android:layout_marginTop="2mm"
-                android:orientation="vertical"
-                >
+                <LinearLayout
+                    android:layout_width="220dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="2mm"
+                    android:layout_marginTop="2mm"
+                    android:orientation="vertical">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Beyond The Stars"
-                android:textColor="@color/white"
-                android:fontFamily="@font/poppins"
-                android:textSize="16dp"
-                />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins"
+                        android:text="Beyond The Stars"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/poppins"
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins"
 
-                    android:text="Dept, Ashley Alisha"
-                    android:textColor="@color/material_dynamic_neutral50"
+                        android:text="Dept, Ashley Alisha"
+                        android:textColor="#747679"
 
-                    android:textSize="13dp" />
-            </LinearLayout>
+                        android:textSize="13dp" />
+                </LinearLayout>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
@@ -490,7 +488,7 @@
                             android:fontFamily="@font/poppins"
 
                             android:text="The 1975"
-                            android:textColor="@color/material_dynamic_neutral50"
+                            android:textColor="#747679"
 
                             android:textSize="13dp" />
                     </LinearLayout>
@@ -542,7 +540,7 @@
                             android:fontFamily="@font/poppins"
 
                             android:text="keshi"
-                            android:textColor="@color/material_dynamic_neutral50"
+                            android:textColor="#747679"
 
                             android:textSize="13dp" />
                     </LinearLayout>
@@ -604,7 +602,7 @@
                                 android:fontFamily="@font/poppins"
 
                                 android:text="d4vd"
-                                android:textColor="@color/material_dynamic_neutral50"
+                                android:textColor="#747679"
 
                                 android:textSize="13dp" />
                         </LinearLayout>
@@ -656,7 +654,7 @@
                                 android:fontFamily="@font/poppins"
 
                                 android:text="The 1975"
-                                android:textColor="@color/material_dynamic_neutral50"
+                                android:textColor="#747679"
 
                                 android:textSize="13dp" />
                         </LinearLayout>
@@ -708,7 +706,7 @@
                                 android:fontFamily="@font/poppins"
 
                                 android:text="Yayyoung"
-                                android:textColor="@color/material_dynamic_neutral50"
+                                android:textColor="#747679"
 
                                 android:textSize="13dp" />
                         </LinearLayout>
@@ -770,7 +768,7 @@
                                 android:fontFamily="@font/poppins"
 
                                 android:text="Super Girlies"
-                                android:textColor="@color/material_dynamic_neutral50"
+                                android:textColor="#747679"
 
                                 android:textSize="13dp" />
                         </LinearLayout>
@@ -822,7 +820,7 @@
                                 android:fontFamily="@font/poppins"
 
                                 android:text="The Penninsula"
-                                android:textColor="@color/material_dynamic_neutral50"
+                                android:textColor="#747679"
 
                                 android:textSize="13dp" />
                         </LinearLayout>
@@ -874,7 +872,7 @@
                                 android:fontFamily="@font/poppins"
 
                                 android:text="Jogja Hip Hop Foundation"
-                                android:textColor="@color/material_dynamic_neutral50"
+                                android:textColor="#747679"
 
                                 android:textSize="13dp" />
                         </LinearLayout>
