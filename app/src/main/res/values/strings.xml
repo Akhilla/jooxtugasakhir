@@ -1,5 +1,9 @@
 <resources>
-    <string name="app_name">Joox Slicer</string>
+    <string name="app_name">JOOX</string>
     <string name="terms">I Agree to the <u> Terms Of Service</u>,</string>
     <string name="service"><u> JOOX User Terms</u> and <u> Privacy Policy</u></string>
+    <string name="title_activity_bottom">BottomActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 </resources>
